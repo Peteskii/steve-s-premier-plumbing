@@ -199,7 +199,7 @@ function Services() {
             <article
               key={title}
               className="group relative rounded-2xl border border-border bg-card/70 backdrop-blur p-8 hover:border-fire/50 transition-colors duration-500"
-              style={{ boxShadow: tone === "fire" ? "var(--shadow-fire)" : "var(--shadow-ice)", boxShadowColor: undefined }}
+              style={{ boxShadow: tone === "fire" ? "var(--shadow-fire)" : "var(--shadow-ice)" }}
             >
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6 border border-border" style={{ background: tone === "fire" ? "var(--gradient-fire)" : "var(--gradient-ice)", boxShadow: "var(--shadow-inset-fire)" }}>
                 <Icon className="w-5 h-5 text-ink" />
