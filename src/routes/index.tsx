@@ -10,6 +10,11 @@ import partnerTrio from "@/assets/partner-trio.jpeg";
 import partnerWebb from "@/assets/partner-webb.png";
 import partnerUponor from "@/assets/partner-uponor.jpeg";
 import bbbBadge from "@/assets/bbb-accredited.jpeg";
+import workManifold from "@/assets/work-manifold-uponor.jpg";
+import workRadiant from "@/assets/work-radiant-system.jpg";
+import workBoiler from "@/assets/work-boiler-install.jpg";
+import workZoned from "@/assets/work-zoned-heating.jpg";
+import workCopper from "@/assets/work-copper-craftsmanship.jpg";
 import { AmbientFX } from "@/components/AmbientFX";
 import {
   Phone, Wrench, Flame, Snowflake, Droplets, ShieldCheck, Clock, Star,
@@ -42,6 +47,7 @@ function Home() {
       <BrandStrip />
       <WhyUs />
       <About />
+      <Work />
       <Partners />
       <Reviews />
       <CTA />
@@ -62,6 +68,7 @@ function Nav() {
           <a href="#services" className="hover:text-foreground transition">Services</a>
           <a href="#why" className="hover:text-foreground transition">Why Steve</a>
           <a href="#about" className="hover:text-foreground transition">About</a>
+          <a href="#work" className="hover:text-foreground transition">Our Work</a>
           <a href="#reviews" className="hover:text-foreground transition">Reviews</a>
           <a href="#contact" className="hover:text-foreground transition">Contact</a>
         </nav>
