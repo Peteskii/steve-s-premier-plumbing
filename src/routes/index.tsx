@@ -13,7 +13,7 @@ import bbbBadge from "@/assets/bbb-accredited.jpeg";
 import { AmbientFX } from "@/components/AmbientFX";
 import {
   Phone, Wrench, Flame, Snowflake, Droplets, ShieldCheck, Clock, Star,
-  MessageCircle, MapPin, ArrowRight, Quote, BadgeCheck, Award, CheckCircle2, Mail,
+  MessageCircle, MapPin, ArrowRight, Quote, BadgeCheck, Award, CheckCircle2,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "(603) 477-6916";
 const TEL = "tel:+16034776916";
-const EMAIL = "steveosplumbingllc@gmail.com";
+
 
 function Home() {
   return (
@@ -446,9 +446,6 @@ function CTA() {
             <a href="sms:+16034776916" className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-md font-medium border border-border bg-card hover:bg-secondary transition text-lg">
               <MessageCircle className="w-5 h-5" /> Text Steve
             </a>
-            <a href={`mailto:${EMAIL}`} className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-md font-medium border border-border bg-card hover:bg-secondary transition text-lg">
-              <Mail className="w-5 h-5" /> Email
-            </a>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
@@ -473,13 +470,10 @@ function Footer() {
         <div className="text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Steve-O's Plumbing LLC · Licensed in NH &amp; VT · Fully Insured
         </div>
-        <div className="md:text-right space-y-1 text-sm">
+        <div className="md:text-right text-sm">
           <a href={TEL} className="inline-flex items-center gap-2 text-fire-glow hover:text-fire transition">
             <Phone className="w-4 h-4" /> {PHONE}
           </a>
-          <div className="text-muted-foreground">
-            <a href={`mailto:${EMAIL}`} className="hover:text-foreground transition break-all">{EMAIL}</a>
-          </div>
         </div>
       </div>
     </footer>
