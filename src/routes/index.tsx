@@ -13,7 +13,7 @@ import bbbBadge from "@/assets/bbb-accredited.jpeg";
 import { AmbientFX } from "@/components/AmbientFX";
 import {
   Phone, Wrench, Flame, Snowflake, Droplets, ShieldCheck, Clock, Star,
-  MessageCircle, MapPin, ArrowRight, Quote, BadgeCheck, Award, CheckCircle2, Mail,
+  MessageCircle, MapPin, ArrowRight, Quote, BadgeCheck, Award, CheckCircle2,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -445,9 +445,6 @@ function CTA() {
             </a>
             <a href="sms:+16034776916" className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-md font-medium border border-border bg-card hover:bg-secondary transition text-lg">
               <MessageCircle className="w-5 h-5" /> Text Steve
-            </a>
-            <a href={`mailto:${EMAIL}`} className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-md font-medium border border-border bg-card hover:bg-secondary transition text-lg">
-              <Mail className="w-5 h-5" /> Email
             </a>
           </div>
 
