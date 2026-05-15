@@ -44,11 +44,11 @@ export function AmbientFX({ variant = "embers", intensity = 1 }: { variant?: Var
 
       {/* Embers */}
       {layers.embers.map((_, i) => {
-        const left = rand(i, 1) * 100;
-        const drift = (rand(i, 2) - 0.5) * 120;
-        const dur = 9 + rand(i, 3) * 10;
-        const delay = -rand(i, 4) * dur;
-        const size = 2 + rand(i, 5) * 4;
+        const left = r(rand(i, 1) * 100);
+        const drift = r((rand(i, 2) - 0.5) * 120);
+        const dur = r(9 + rand(i, 3) * 10);
+        const delay = r(-rand(i, 4) * dur);
+        const size = r(2 + rand(i, 5) * 4);
         return (
           <span
             key={`e${i}`}
