@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-pipes.jpg";
 import steveImg from "@/assets/steve-portrait.jpg";
 import logoWordmark from "@/assets/logo-wordmark.jpeg";
@@ -21,17 +20,7 @@ import {
   MessageCircle, MapPin, ArrowRight, Quote, BadgeCheck, Award, CheckCircle2,
 } from "lucide-react";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Steve-O's Plumbing LLC — Plumbing, Heating & AC | NH & VT" },
-      { name: "description", content: "Licensed in NH & VT. Plumbing, heating, and air conditioning — service, repair, and whole-house installs. Fully insured. 5★ rated. Call (603) 477-6916." },
-      { property: "og:title", content: "Steve-O's Plumbing LLC — Done Right The First Time" },
-      { property: "og:description", content: "Plumbing • Heating • Air Conditioning across New Hampshire and Vermont." },
-    ],
-  }),
-  component: Home,
-});
+export default Home;
 
 const PHONE = "(603) 477-6916";
 const TEL = "tel:+16034776916";
