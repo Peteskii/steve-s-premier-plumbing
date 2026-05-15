@@ -127,15 +127,26 @@ function Hero() {
           </div>
         </div>
 
-        {/* Fire & Ice fists */}
+        {/* Brand video */}
         <div className="hidden lg:block lg:col-span-5">
-          <div className="relative aspect-square">
-            <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative aspect-square animate-fade-in">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="absolute w-72 h-72 rounded-full blur-3xl flame-breathe" style={{ background: "radial-gradient(circle, oklch(0.7 0.22 40 / 0.5), transparent 65%)" }} />
               <div className="absolute w-72 h-72 rounded-full blur-3xl ice-shimmer" style={{ background: "radial-gradient(circle, oklch(0.78 0.16 235 / 0.45), transparent 65%)", transform: "translate(40%, 30%)" }} />
             </div>
-            <img src={fistFire} alt="Fire fist representing heating services" className="absolute top-1/2 left-0 w-[55%] -translate-y-1/2 -rotate-12 drop-shadow-[0_20px_40px_rgba(255,120,40,0.45)]" />
-            <img src={fistWater} alt="Water fist representing plumbing services" className="absolute top-1/2 right-0 w-[55%] -translate-y-1/2 rotate-12 scale-x-[-1] drop-shadow-[0_20px_40px_rgba(80,160,255,0.45)]" />
+            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-border/60" style={{ boxShadow: "var(--shadow-elegant)" }}>
+              <video
+                src="/hero-video.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(180deg, transparent 55%, oklch(0.06 0.01 260 / 0.55) 100%)" }} />
+              <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-white/5 rounded-2xl" />
+            </div>
           </div>
         </div>
       </div>
