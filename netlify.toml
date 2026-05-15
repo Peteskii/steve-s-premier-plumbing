@@ -6,4 +6,4 @@ publish = "client/dist"
 from = "/*"
 to = "/index.html"
 status = 200
-#steve update 2
+#steve update 3
